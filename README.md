@@ -1,5 +1,27 @@
 # Web crunch - blog
-- 	⁃	web crunch stripe tutorial
+- 	https://web-crunch.com/posts/lets-build-with-ruby-on-rails-blog-with-comments
+
+- GEMS
+
+```
+group :development do
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "web-console"
+  # Make errors prettier
+  gem 'better_errors'
+  gem 'binding_of_caller', '~> 1.0'
+  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
+  # gem "rack-mini-profiler"
+
+  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
+  # gem "spring"
+end
+# Bulma CSS
+gem 'bulma-rails'
+# Simple forms
+gem 'simple_form'
+```
+
 - rails g scaffold post title content:text
 - rails g scaffold comment name comment:text
 - rails g migration add_post_id_to_comments post_id:integer
